@@ -1,0 +1,53 @@
+.header {
+  height: 68px;
+  border-bottom: 1px solid #F8F8F8;
+  font-size: 14px;
+  color: #838383;
+  letter-spacing: -.04em;
+  font-weight: 400;
+}
+
+.logo {
+  float: left;
+  line-height: 68px;
+}
+
+.menu {
+  float: left;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding-left: 80px;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+  cursor: pointer;
+  padding: 20px 5px;
+  transition: color 0.1s ease-in-out;
+}
+
+.menu-list-item:hover {
+  color: #004EAB;
+}
+
+.sub-menu {
+  float: right;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  color: #1C1C1C;
+}
+
+.my-page {
+  margin-right: 12px;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.cart-btn {
+  cursor: pointer;
+}

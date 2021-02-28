@@ -1,6 +1,9 @@
+// eslint-disable-next-line
+
 import React from 'react'
-import logo from '../logo.svg';
-import cart from '../cart.svg';
+import logo from '../logo.svg'
+import cart from '../cart.svg'
+import './Header.css'
 
 const Header = () => {
   const cartBtnHandler = () => {

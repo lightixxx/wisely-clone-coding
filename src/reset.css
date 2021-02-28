@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
 /* Reset CSS */
@@ -17,8 +17,10 @@ a {
 button,
 input,
 textarea {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   font-size: 16px;
+  background: none;
+  border: none;
 }
 
 button:focus,

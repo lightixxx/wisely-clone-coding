@@ -1,4 +1,8 @@
-import './App.css';
+// eslint-disable-next-line
+
+import './reset.css'
+import './grid.min.css'
+import './App.css'
 import Header from './components/Header'
 
 function App() {
@@ -6,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
     </div>
-  );
+  )
 }
 
 export default App;
