@@ -20,7 +20,7 @@ const BrandStory = () => {
                     <dt>시중 주요 브랜드</dt>
                   </div>
                 </dl>
-                <h3 className="brand-story-title">더 이상 속지 마세요</h3>
+                <h3 className="title brand-story-title">더 이상 속지 마세요</h3>
                 <p className="brand-story-desc light-desc">
                   와이즐리는 중간 유통, 과도한 마케팅 등<br/>
                   시장 관행을 거부하고, 정직한 가격을 만듭니다.
