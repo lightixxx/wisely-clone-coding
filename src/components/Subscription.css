@@ -1,0 +1,52 @@
+.subscription {
+  background-color: #F0F0F0;
+  height: 680px;
+}
+
+.subscription-image {
+  width: auto;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscription-content {
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 112px;
+}
+
+.subscription-title {
+  margin-bottom: 28px;
+}
+
+.subscription-desc {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+  .subscription {
+    height: auto;
+  }
+  .subscription-image {
+    display: none;
+  }
+
+  .subscription-content {
+    padding: 80px 16px;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-right: 0;
+    background-image: url(../assets/images/products_small.png);
+    background-size: 360px auto;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
+}
