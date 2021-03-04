@@ -18,15 +18,14 @@ const Landing = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="landing-content">
-                <h2 className="title landing-title">
-                  불합리한 시장을<br />
-                  바꿔나갑니다.
-                </h2>
-                <p className="desc landing-desc">모두가 합리적인 가격에 좋은 제품을 누릴 수 있도록.</p>
+              <h2 className="title landing-title">
+                불합리한 시장을<br />
+                바꿔나갑니다.
+              </h2>
+              <p className="desc landing-desc">모두가 합리적인 가격에 좋은 제품을 누릴 수 있도록.</p>
 
-                <div className="scroll-down"></div>
-              </div>
+              <button className="scroll-down-btn" type="button">
+              </button>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
-.landing-content {
-  position: relative;
-  height: calc(100vh - 68px);
+.landing {
+  height: 852px;
   background-image: url(../assets/images/main.png);
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -8,23 +7,34 @@
   padding-top: 150px;
 }
 
+.landing .container,
+.landing .row {
+  height: 100%;
+}
+
+.landing .col-12 {
+  position: relative;
+}
+
 .landing-title {
   margin-bottom: 28px;
   text-align: center;
 }
 
-.scroll-down {
+.scroll-down-btn {
+  display: block;
   width: 48px;
   height: 48px;
   position: absolute;
   left: 50%;
-  bottom: -10px;
+  bottom: 5%;
   transform: translate(-50%, -50%);
   background-image: url(../assets/images/Arrow-down.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   animation: scroll-down 1.5s linear .5s infinite;
 }
+
 
 @keyframes scroll-down {
   0% {
@@ -46,18 +56,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .landing-content {
+  .landing {
     background-size: 360px auto;
     height: calc(70vh - 68px);
     padding-top: 55px;
-  }
-
-  .landing-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .landing-desc {
-    font-size: 14px;
   }
 }
