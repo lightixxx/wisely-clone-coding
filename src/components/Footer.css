@@ -1,0 +1,160 @@
+.footer {
+  background-color: #1C1C1C;
+  padding: 0 30px 40px;
+}
+
+.footer .container {
+  padding: 0;
+}
+.mobile-footer-sns {
+  display: none;
+}
+
+.footer-header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  border-bottom: 1px solid #CBCBCB;
+  margin-bottom: 26px;
+}
+
+.brand-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  width: 100%;
+  margin-right: 30px;
+  color: #CBCBCB;
+  font-size: 12px;
+}
+
+.site-service {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  width: 100%;
+  color: #F0F0F0;
+  font-size: 14px;
+}
+
+.brand-info li:first-child,
+.site-service li:first-child {
+  font-weight: 400;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #CBCBCB;
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.6;
+}
+
+.sns-list {
+  display: flex;
+}
+
+.footer-content-brand {
+  height: 80px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-footer {
+  color: #CBCBCB;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0 16px 38px;
+  }
+
+  .mobile-footer-sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #CBCBCB;
+  }
+
+  .footer-header {
+    height: inherit;
+    border-bottom: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-info {
+    order: 1;
+    display: block;
+  }
+
+  .brand-info li {
+    display: inline;
+  }
+
+  .brand-info li::after {
+    content: ' | ';
+    margin: 0 5px;
+  }
+
+  .brand-info li:first-child::after {
+    color: #CBCBCB;
+  }
+
+  .brand-info li:last-child::after {
+    content: '';
+  }
+
+  .site-service {
+    height: 78px;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  .site-service li {
+    margin-right: 22px;
+  }
+
+  .mobile-footer-info {
+    color: #CBCBCB;
+    margin-bottom: 20px;
+  }
+
+  .footer-info-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.57142851;
+  }
+  
+  .footer-info-desc {
+    font-size: 12px;
+    /* height: 0;
+    overflow: hidden; */
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .footer-info-info.show .footer-info-desc {
+    /* height: 250px; */
+    display: block;
+  }
+
+  .footer-content {
+    display: none;
+  }
+
+}
