@@ -6,7 +6,9 @@ import footerLogo from '../assets/images/logo_footer.svg'
 
 const Footer = () => {
   let deviceWidth = document.body.clientWidth
-  
+  const footerInfoDropDown = (e) => {
+    e.target.nextSibling.classList.toggle('disable')
+  }
   const mobileFooterBrand = 
     <div className="mobile-footer-sns">
       <div className="footer-logo">
@@ -27,16 +29,23 @@ const Footer = () => {
     </div>
   
   const mobileFooterInfo = 
-    <div className="mobile-footer-info show">
+    <div className="mobile-footer-info" onClick={footerInfoDropDown}>
       <h4 className="footer-info-title">&#40;주&#41; 와이즐리 컴퍼니 사업자 정보</h4>
-      <p className="footer-info-desc">
-        서울시 강남구 테헤란로 415 엘세븐호텔 강남타워 오피스동 4층 401호, 402호, 403호<span className="comma">, </span>대표자: 이기웅 <br />
-        사업자등록번호: 123-45-67890<span className="comma">, </span>통신판매업신고번호: 2021-서울강남-01234<br />
-        개인정보보호책임자: 이기웅(<a href="mailto:dlrldnd1224@naver.com">lightixxx@naver.com</a>)<span className="comma">, </span>고객센터: <a href="tel:02-1234-5678">1234-5678</a> <a href="mailto:dlrldnd1224@naver.com">lightixxx@naver.com</a><br />
-        제휴문의: <a href="mailto:dlrldnd1224@naver.com">lightixxx@naver.com</a>
+      <p className="footer-info-desc disable">
+        서울시 강남구 테헤란로 415 엘세븐호텔 강남타워 오피스동 4층 401호, 402호, 403호<br />
+        대표자: 이기웅 <br />
+        <br />
+        사업자등록번호: 123-45-67890<br />
+        통신판매업신고번호: 2021-서울강남-01234<br />
+        <br />
+        개인정보보호책임자: 이기웅&#40;<a href="mailto:dlrldnd1224@naver.com">lightixxx@naver.com</a>&#41;<br />
+        고객센터: <a href="tel:02-1234-5678">1234-5678</a><br />
+        <a href="mailto:dlrldnd1224@naver.com">lightixxx@naver.com</a><br />
+        제휴문의: <a href="mailto:dlrldnd1224@naver.com">lightixxx@naver.com</a><br />
       </p>
     </div>
 
+  
 
   return (
     <>
