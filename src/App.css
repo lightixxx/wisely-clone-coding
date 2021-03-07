@@ -2,19 +2,129 @@
   display: block;
   width: 62px;
   height: 62px;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
   overflow: hidden;
   border-radius: 50%;
   background-image: url(./assets/images/chat-box-wiselyshave.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
   box-shadow: 0 4px 6px 0 rgb(0 0 0 / 15%);
   cursor: pointer;
 }
 
-/* .chatBot img {
-  width: 100%;
-} */
+.title {
+  color: #000C24;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.31578947;
+  letter-spacing: -.04em;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1C1C1C;
+  letter-spacing: -0.04em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.link {
+  color: #0055B8;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.primary-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #0055b8;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+  transition: opacity 350ms ease-in-out;
+}
+
+.primary-button:hover {
+  opacity: .7;
+}
+
+.trial-banner {
+  position: fixed;
+  right: 120px;
+  bottom: 60px;
+  z-index: 10;
+  width: 360px;
+  height: 66px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  background-image: url(./assets/images/trial_banner_1_mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 16px rgb(0 0 0 / 8%);
+  transition: bottom .4s ease-in-out;
+}
+
+.trial-banner a {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.trial-banner-text {
+  padding: 0 16px;
+}
+
+.trial-banner-title {
+  font-size: 14px;
+  color: #0055B8;
+  font-weight: 700;
+  line-height: 1.57142857;
+}
+
+.trial-banner-desc {  
+  color: #1C1C1C;
+  font-size: 14px;
+}
+
+.banner-detail-button {
+  color: #0055B8;
+  font-size: 14px;
+  padding: 6px 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .primary-button {
+    width: 160px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .trial-banner {
+    bottom: 60px;
+  }
+}

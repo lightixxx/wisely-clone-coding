@@ -22,7 +22,15 @@ function App() {
       <Subscription />
       <StartTrial />
       <Footer />
-      {/* <div></div> */}
+      <div className="trial-banner">
+        <a href="#">
+          <div className="trial-banner-text">
+            <h5 className="trial-banner-title">와이즐리 체험 세트</h5>
+            <p className="trial-banner-desc">지금 바로 시작해보세요</p>
+          </div>
+          <button type="button" className="banner-detail-button">자세히</button>
+        </a>
+      </div>
       <button type="button" className="chatBot"></button>
     </div>
   )
