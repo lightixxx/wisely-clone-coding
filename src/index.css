@@ -3,7 +3,6 @@ body {
   font-family: "SpoqaHanSans",Roboto,"Helvetica Neue",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: #c8c8c8; */
 }
 
 code {
@@ -11,8 +10,19 @@ code {
     monospace;
 }
 
+/* Custom Grid System - Fix container width */
 .container {
-  max-width: 1140px;
+  max-width: 1140px !important;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100% !important;
+    
+  }
+  .row {
+    margin: 0 !important;
+  }
 }
