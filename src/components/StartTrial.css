@@ -1,8 +1,5 @@
 .start-trial {
   background-color: #F8F8F8;
-}
-
-.start-trial .col-6 {
   padding: 0 18px;
 }
 
@@ -26,15 +23,19 @@
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .start-trial-image img {
-  width: 460px;
+  display: block;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .start-trial {
     height: 614px;
+    margin-left: 16px;
     padding: 80px 16px;
     background-image: url(../assets/images/trial_set_small.png);
     background-size: 308px 308px;
