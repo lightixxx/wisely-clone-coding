@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react'
 import './Subscription.css'
 import subscriptionProduct from '../assets/images/products.png'

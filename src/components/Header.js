@@ -1,6 +1,7 @@
-// eslint-disable-next-line
+/* eslint-disable */
 
-import React from 'react'
+import React, { useState } from 'react'
+import Cart from './Cart'
 import logo from '../logo.svg'
 import cart from '../cart.svg'
 import HamburgerBtn from '../Hamburger-button.svg'
@@ -10,9 +11,13 @@ import './Header.css'
 const Header = () => {
   const toggleBtn = document.querySelector('.toggle-btn')
   const menuList = document.querySelector('.menu-list')
+  const [showCart, setShowCart] = useState(false)
+
+  let deviceHeight = document.body.scrollHeight
+  let scrollHeight = document.documentElement.scrollTop
 
   const cartBtnHandler = () => {
-    console.log('카트버튼 눌림')
+    
   }
 
   const toggleBtnHandler = () => {
@@ -21,12 +26,20 @@ const Header = () => {
     // menuList.classList.toggle('active')
   }
 
-  
+  // document.addEventListener('scroll', () => {
+  //   if(scrollHeight > 70) {
+      
+  //   }
+  // })
 
 
   return (
     <>
-      <header className="header">
+      <header className="header" onScroll={(e) => {
+        if(scrollHeight > 70) {
+          
+        }
+      }}>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -58,8 +71,8 @@ const Header = () => {
                 <div className="sub-menu">
                   <a className="my-page">마이페이지</a>
                   
-                  <div className="cart">
-                    <button type="button" className="cart-btn" onClick={cartBtnHandler} >
+                  <div className="cart-container">
+                    <button type="button" className="cart-button" onClick={cartBtnHandler} >
                       <img src={cart} alt="장바구니 아이콘" />
                     </button>
                   </div>

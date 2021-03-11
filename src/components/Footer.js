@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react'
 import './Footer.css'
 import facebookImage from '../assets/images/facebook.svg'
