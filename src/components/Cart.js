@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React from 'react'
+import React, { useState } from 'react'
 import './Cart.css'
 import razorSetImage from '../assets/images/razor_2up_navy.png'
 import refillBladeImage from '../assets/images/refill_blade.png'
@@ -10,6 +10,11 @@ import giftSetImage from '../assets/images/gift_set_navy.png'
 
 
 const Cart = () => {
+
+  const cartBtn = document.querySelector('cart-button')
+  const [showCart, setShowCart] = useState(false)
+
+
   return (
     <section className="cart">
       <div className="cart-wrapper">

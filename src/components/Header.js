@@ -3,43 +3,18 @@
 import React, { useState } from 'react'
 import Cart from './Cart'
 import logo from '../logo.svg'
-import cart from '../cart.svg'
+import cartImage from '../cart.svg'
 import HamburgerBtn from '../Hamburger-button.svg'
 import CloseBtn from '../Close-button.svg'
 import './Header.css'
 
 const Header = () => {
-  const toggleBtn = document.querySelector('.toggle-btn')
-  const menuList = document.querySelector('.menu-list')
+
   const [showCart, setShowCart] = useState(false)
-
-  let deviceHeight = document.body.scrollHeight
-  let scrollHeight = document.documentElement.scrollTop
-
-  const cartBtnHandler = () => {
-    
-  }
-
-  const toggleBtnHandler = () => {
-    console.log('토글버튼 눌림');
-    // 이미지 바꾸기
-    // menuList.classList.toggle('active')
-  }
-
-  // document.addEventListener('scroll', () => {
-  //   if(scrollHeight > 70) {
-      
-  //   }
-  // })
-
 
   return (
     <>
-      <header className="header" onScroll={(e) => {
-        if(scrollHeight > 70) {
-          
-        }
-      }}>
+      <header className="header">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -72,15 +47,12 @@ const Header = () => {
                   <a className="my-page">마이페이지</a>
                   
                   <div className="cart-container">
-                    <button type="button" className="cart-button" onClick={cartBtnHandler} >
-                      <img src={cart} alt="장바구니 아이콘" />
+                    <button type="button" className="cart-button">
+                      <img src={cartImage} alt="장바구니 아이콘" />
                     </button>
                   </div>
-
                   
                 </div>
-
-                
               </div>
             </div>
           </div>
