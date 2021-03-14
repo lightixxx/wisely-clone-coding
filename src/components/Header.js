@@ -2,11 +2,12 @@
 
 import React, { useState } from 'react'
 import Cart from './Cart'
+
+import './Header.css'
 import logo from '../logo.svg'
 import cartImage from '../cart.svg'
 import HamburgerBtn from '../Hamburger-button.svg'
-import CloseBtn from '../Close-button.svg'
-import './Header.css'
+// import CloseBtn from '../Close-button.svg'
 
 const Header = () => {
 
@@ -14,13 +15,14 @@ const Header = () => {
 
   return (
     <>
+      {/* { showCart ? <Cart /> : null } */}
       <header className="header">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="header-content">
 
-                <button type="button" className="toggle-btn" onClick={toggleBtnHandler}>
+                <button type="button" className="toggle-btn">
                   <img src={HamburgerBtn} alt="메뉴 열기"/>
                 </button>
                 
@@ -47,8 +49,8 @@ const Header = () => {
                   <a className="my-page">마이페이지</a>
                   
                   <div className="cart-container">
-                    <button type="button" className="cart-button">
-                      <img src={cartImage} alt="장바구니 아이콘" />
+                    <button type="button" className="cart-button" onClick={ () => { setShowCart(true) } }>
+                      <img src={cartImage} alt="장바구니" />
                     </button>
                   </div>
                   
