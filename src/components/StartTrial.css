@@ -35,7 +35,6 @@
 @media screen and (max-width: 768px) {
   .start-trial {
     height: 614px;
-    margin-left: 16px;
     padding: 80px 16px;
     background-image: url(../assets/images/trial_set_small.png);
     background-size: 308px 308px;
